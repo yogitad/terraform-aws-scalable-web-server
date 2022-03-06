@@ -9,7 +9,7 @@ variable "cluster_name" {
 }
 
 variable "vpc_id" {
-  description = "The VPC ID""
+  description = "The VPC ID"
   type        = string
 }
 
