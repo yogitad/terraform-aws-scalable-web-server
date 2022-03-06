@@ -84,7 +84,7 @@ resource "aws_lb_target_group" "asg" {
   name     = var.cluster_name
   port     = var.server_port
   protocol = "HTTP"
-  vpc_id   = data.aws_vpc.default.id
+  vpc_id   = data.aws_vpc.selected.id
 
   health_check {
     path                = "/"

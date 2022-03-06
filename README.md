@@ -15,7 +15,8 @@ module "scalable_webserver" {
   db_remote_state_key    = "s3-path"
 
   instance_type = "t2.micro"
-  min_size      = 2
+  min_size      = 2  
   max_size      = 10
+  vpc_id = "your_vpc_id"
 }
 ```
