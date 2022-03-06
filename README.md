@@ -7,8 +7,8 @@ This implementation is as per explanation provided in https://www.oreilly.com/li
 ## Usage
 
 ```
-module "scalable_webserver_cluster" {
-  source = "yogitad/terraform-modules/scalable_webserver_cluster"
+module "scalable_webserver" {
+  source = "yogitad/terraform-aws-scalable_webserver"
 
   cluster_name           = "your-cluster-name"
   db_remote_state_bucket = "s3-bucket-name"
